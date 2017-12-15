@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
+<?php header('Content-type: text/html; charset=utf-8');
+
 if(!isset($_REQUEST['action']))
     $action = 'accueil';
 else
@@ -25,5 +19,3 @@ switch($action)
 // vue qui crée le pied de page
 include("vues/v_pied.php") ;
 ?>
-    </body>
-</html>
